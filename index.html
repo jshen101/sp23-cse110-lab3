@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+  </head>
+  <body>
+    <header>
+        <h1>Part 1. Intro to HTML</h1>
+        <h2>Meeting Minutes</h2>
+        <h3>date: 4/12/2023</h3>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendence List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#picture">Presented Pictures</a></li>
+                <li><a href="#recording">Recording</a></li>
+            </ul>
+        </nav>
+        <details>
+            <summary>Meeting Summary</summary>
+            A software engineer meeting with CAT, 
+            discuss unfinished word from last week and work that should be done this week. 
+        </details>
+    </header>
+    <hr>
+    <main>
+        <p>
+            This is a <i>meeting minutes</i> for <b>Part 1. Intro to HTML</b> of Lab 2. 
+            <br>
+            Please review the meeting minutes <em>carefully</em> if you missed this meeting <strong>ASAP</strong>.
+        </p>
+        <section id="attendance"> 
+            Attandence List: 
+        <ol> 
+            <li>Host</li>
+            <li>Attendant 1</li>
+            <li>Attendant 2</li>
+            <li>Attendant 3</li>
+            <li>Attendant 4</li>
+        </ol>
+        </section>
+        <br>
+        <section id="agenda">
+            Agenda: 
+            <ul> 
+                <li>Check unfinished business from last meeting</li>
+                <li>Discuss new business that need to be talked about</li>
+                <li>Questions</li>
+                <li>Conclusion</li>
+            </ul>
+        </section>
+        <br>
+        <section id="picture">
+            Diagram on whiteboard: <br>
+            <img src="images/whiteboard.png">
+        </section>
+        <br>
+        <section id="recording">
+            Recording: 
+            <p>audio: </p>
+            <audio controls="true">
+                <source src="media/cat.mp3" type="audio/mpeg" />
+            </audio>
+            <br>
+            <p>video:</p>
+            <video controls>
+                <source src="media/cat.mp4" type="video/mp4"/>
+              </video>
+        </section>
+    </main>
+    <form>
+        <fieldset>
+            <legend>Select what year are you in</legend>
+            <input type="radio"> 1st year<br>
+            <input type="radio"> 2nd year<br>
+            <input type="radio"> 3rd year<br>
+            <input type="radio"> 4th year<br>
+            <input type="radio"> Other: <textarea>please elaborate more...</textarea>
+          </fieldset>
+    </form>
+    <br>
+    <label>Choose your standing:</label>
+    <select>
+        <option>--Please choose an standing--</option>
+        <option>Freshman</option>
+        <option>Sophomore</option>
+        <option>Junior</option>
+        <option>Senior</option>
+    </select>
+    <br>
+    <br>
+    <label>If not in the options above, choose one here: </label>
+    <input list="standing">
+    <datalist id="standing">
+        <option value="Freshman">
+        <option value="Sophomore">
+        <option value="Junior">
+        <option value="Senior">
+    </datalist>
+    <br>
+    <br>
+    <label>Check your status: </label>
+    <input type="checkbox"> You have attended the meeting or read the meeting minutes. 
+    <br>
+    If no, please elaborate the reason: 
+    <input type="text">
+    <br>
+    The day you attended the meeting or read the meeting minutes: <input type="date">
+    <br>
+    <br>
+    <button>Submit your results</button>
+    <hr>
+    <footer>
+        <div>Please contact me if there are any questions. </div>
+        <span>CSE110 Lab2</span>
+    </footer>
+  </body>
+</html>
