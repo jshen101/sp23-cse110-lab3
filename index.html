@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-        body {background-color: #FFF;}
-    </style>
-    <link rel="stylesheet" href="style.css">
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
   <body>
-    <header style="color:blueviolet">
+    <header>
         <h1>Part 1. Intro to HTML</h1>
         <h2>Meeting Minutes</h2>
         <h3>date: 4/12/2023</h3>
@@ -31,7 +27,7 @@
     <hr>
     <main>
         <p>
-            This is a <i>meeting minutes</i> for <b>Part 1. Intro to HTML</b> of <b>Lab 2</b>. 
+            This is a <i>meeting minutes</i> for <b>Part 1. Intro to HTML</b> of Lab 2. 
             <br>
             Please review the meeting minutes <em>carefully</em> if you missed this meeting <strong>ASAP</strong>.
         </p>
@@ -56,83 +52,70 @@
             </ul>
         </section>
         <br>
-        <div class="grid-container">
-            <div class="grid-child">
-                <section id="picture">
-                    Diagram on whiteboard: <br>
-                    <img src="images/whiteboard.png" alt="whiteboard draft">
-                </section>
-            </div>
-            <div class="grid-child">
-                <section id="recording">
-                    <p>audio: </p>
-                    <audio controls>
-                        <source src="media/cat.mp3" type="audio/mpeg" />
-                    </audio>
-                </section>
-            </div>        
-            <div class="grid-child">
-                <section id="recording">
-                    <p>video:</p>
-                    <video controls>
-                        <source src="media/cat.mp4" type="video/mp4"/>
-                    </video>
-                </section>
-            </div>
-        </div>
-    </main>
-    <br>
-    <div class="info">
-        <form>
-            <fieldset class="year">
-                <legend>Select what year are you in</legend>
-                <input type="radio"> 1st year<br>
-                <input type="radio"> 2nd year<br>
-                <input type="radio"> 3rd year<br>
-                <input type="radio"> 4th year<br>
-                <input type="radio"> Other: <textarea>please elaborate more...</textarea>
-              </fieldset>
-        </form>
-        <div>
-        <label>Choose your standing:</label>
-        <select>
-            <option>--Please choose an standing--</option>
-            <option>Freshman</option>
-            <option>Sophomore</option>
-            <option>Junior</option>
-            <option>Senior</option>
-        </select>
-        </div>
-
-        <div>
-        <label>If not in the options above, choose one here: </label>
-        <input list="standing">
-        <datalist id="standing">
-            <option value="Freshman">
-            <option value="Sophomore">
-            <option value="Junior">
-            <option value="Senior">
-        </datalist>
-        </div>
-        
-        <div>
-        <label>Check your status: </label>
-        <input type="checkbox"> You have attended the meeting or read the meeting minutes. 
+        <section id="picture">
+            Diagram on whiteboard: <br>
+            <img src="images/whiteboard.png" alt="whiteboard draft">
+        </section>
         <br>
-        If no, please elaborate the reason: 
-        <input type="text">
-        </div>
-
-        <div>
-        The day you attended the meeting or read the meeting minutes: 
-        <input type="date">
-        </div>
-        <button>Submit your results</button>
-    </div>
+        <section id="recording">
+            Recording: 
+            <p>audio: </p>
+            <audio controls>
+                <source src="media/cat.mp3" type="audio/mpeg" />
+            </audio>
+            <br>
+            <p>video:</p>
+            <video controls>
+                <source src="media/cat.mp4" type="video/mp4"/>
+              </video>
+        </section>
+    </main>
+    <form>
+        <fieldset>
+            <legend>Select what year are you in</legend>
+            <input type="radio"> 1st year<br>
+            <input type="radio"> 2nd year<br>
+            <input type="radio"> 3rd year<br>
+            <input type="radio"> 4th year<br>
+            <input type="radio"> Other: <textarea>please elaborate more...</textarea>
+          </fieldset>
+    </form>
+    <br>
+    <label>Choose your standing:</label>
+    <select>
+        <option>--Please choose an standing--</option>
+        <option>Freshman</option>
+        <option>Sophomore</option>
+        <option>Junior</option>
+        <option>Senior</option>
+    </select>
+    <br>
+    <br>
+    <label>If not in the options above, choose one here: </label>
+    <input list="standing">
+    <datalist id="standing">
+        <option value="Freshman">
+        <option value="Sophomore">
+        <option value="Junior">
+        <option value="Senior">
+    </datalist>
+    <br>
+    <br>
+    <label>Check your status: </label>
+    <input type="checkbox"> You have attended the meeting or read the meeting minutes. 
+    <br>
+    If no, please elaborate the reason: 
+    <input type="text">
+    <br>
+    The day you attended the meeting or read the meeting minutes: 
+    <input type="date">
+    <br>
+    <br>
+    <button>Submit your results</button>
     <hr>
     <footer>
         <div>Please contact me if there are any questions. </div>
-        <span class="lab">CSE110 Lab2</span>
+        <span>CSE110 Lab2</span>
     </footer>
   </body>
 </html>
