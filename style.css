@@ -1,0 +1,131 @@
+/* class selector */
+.year{
+    border-radius: 12px;
+    border-color: black;
+    border-width: 0.2vw;
+    border-style: dashed;
+    margin-bottom: 15px;
+}
+
+.info{
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-column-start: auto;
+    grid-area: auto auto auto;
+}
+
+/* id selector */
+#attendance {
+    margin: 0 60% 0 10px; /* margin box for attendance*/
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    background-color: rgb(184, 215, 242);
+    display:block;
+}
+
+/* universal selector */
+* {
+    font-size:large;
+    font-family: 'Roboto', sans-serif;}
+
+/* element selector */
+h1 {
+    background-color:azure;
+    max-width: fit-content;
+    font-size: 1.3rem;
+}
+
+h2 {
+    color: black;
+    font-size: 1.2em;
+}
+
+footer{
+    position: absolute;
+}
+
+header{
+    position: fixed;
+}
+
+main{
+    margin-left: 240px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+video{
+    width:320px;
+    height:240px;
+}
+
+img{
+    width: 10cm;
+    height: 70mm;
+    min-width: 10px;
+}
+
+/* Attribute Selector */
+a[href^="#"] {
+    color:blue;
+}
+
+/* pseudo-class selector*/
+button:hover{
+    color:hsl(128, 69%, 40%);
+}
+
+a:active{
+    color:black;
+}
+
+/* Selector List: select multiple elements */
+em, strong, i, b{
+    text-decoration:underline;
+}
+
+/* Descendant Combinator */
+ol li{
+    text-align:center;
+}
+
+/* Child Combinator */
+div > label{
+    color:green;
+}
+
+/* General sibling combinator */
+i ~ b {
+    color:cadetblue;
+}
+
+/* Adjacent sibling combinato */
+h2 + h3 {
+    color: grey;
+}
+
+/* Combining Two Selectors */
+span.lab{
+    color:blue;
+}
+
+@media screen and (max-width: 960px) {
+    #recording{
+        display:none;
+    }
+}
